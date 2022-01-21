@@ -35,7 +35,7 @@ ${bold}${lightgreen}============================================================
 echo "${nc}"
 
 if [[ -f "./installed" ]]; then
-    echo "${bold}${lightgreen}==> Started ${lightblue}PteroVM${lightgreen} <=="
+    echo "${bold}${lightgreen}==> Started ${lightblue}NicecloudVm${lightgreen} <=="
     function runcmd1 {
         printf "${bold}${lightgreen}User${nc}@${lightblue}nicecloud${nc}:~ "
         read -r cmdtorun
@@ -105,7 +105,7 @@ ${bold}${lightgreen}============================================================
  
 echo "${nc}"
     
-    echo "${bold}${lightgreen}==> Started ${lightblue}PteroVM${lightgreen} <=="
+    echo "${bold}${lightgreen}==> Started ${lightblue}NicecloudVm${lightgreen} <=="
     function runcmd1 {
         printf "${bold}${lightgreen}User${nc}@${lightblue}nicecloud${nc}:~ "
         read -r cmdtorun
