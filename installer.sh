@@ -21,19 +21,14 @@ clear
 
 echo "
 ${bold}${lightgreen}========================================================================
-                                                                                                  
-${bold}${lightblue}@@@@@@@   @@@@@@@  @@@@@@@@  @@@@@@@    @@@@@@      @@@  @@@  @@@@@@@@@@
-${bold}${lightblue}@@@@@@@@  @@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@     @@@  @@@  @@@@@@@@@@@    
-${bold}${lightblue}@@!  @@@    @@!    @@!       @@!  @@@  @@!  @@@     @@!  @@@  @@! @@! @@!    
-${bold}${lightblue}!@!  @!@    !@!    !@!       !@!  @!@  !@!  @!@     !@!  @!@  !@! !@! !@!     
-${bold}${lightblue}@!@@!@!     @!!    @!!!:!    @!@!!@!   @!@  !@!     @!@  !@!  @!! !!@ @!@      
-${bold}${lightblue}!!@!!!      !!!    !!!!!:    !!@!@!    !@!  !!!     !@!  !!!  !@!   ! !@!        
-${bold}${lightblue}!!:         !!:    !!:       !!: :!!   !!:  !!!     :!:  !!:  !!:     !!:        
-${bold}${lightblue}:!:         :!:    :!:       :!:  !:!  :!:  !:!      ::!!:!   :!:     :!:            
-${bold}${lightblue} ::          ::     :: ::::  ::   :::  ::::: ::       ::::    :::     ::        
-${bold}${lightblue} :           :     : :: ::    :   : :   : :  :         :       :      :          
-                                                                                                  
-                                                                                                                
+                                                                                                       
+${bold}${lightblue}███╗░░██╗██╗░█████╗░███████╗░█████╗░██╗░░░░░░█████╗░██╗░░░██╗██████╗░
+${bold}${lightblue}████╗░██║██║██╔══██╗██╔════╝██╔══██╗██║░░░░░██╔══██╗██║░░░██║██╔══██╗
+${bold}${lightblue}██╔██╗██║██║██║░░╚═╝█████╗░░██║░░╚═╝██║░░░░░██║░░██║██║░░░██║██║░░██║
+${bold}${lightblue}██║╚████║██║██║░░██╗██╔══╝░░██║░░██╗██║░░░░░██║░░██║██║░░░██║██║░░██║
+${bold}${lightblue}██║░╚███║██║╚█████╔╝███████╗╚█████╔╝███████╗╚█████╔╝╚██████╔╝██████╔╝
+${bold}${lightblue}╚═╝░░╚══╝╚═╝░╚════╝░╚══════╝░╚════╝░╚══════╝░╚════╝░░╚═════╝░╚═════╝░
+                                                                                                                                                                                                                 
 ${bold}${lightgreen}========================================================================
  "
  
@@ -42,13 +37,13 @@ echo "${nc}"
 if [[ -f "./installed" ]]; then
     echo "${bold}${lightgreen}==> Started ${lightblue}PteroVM${lightgreen} <=="
     function runcmd1 {
-        printf "${bold}${lightgreen}User${nc}@${lightblue}Ptero-vm${nc}:~ "
+        printf "${bold}${lightgreen}User${nc}@${lightblue}nicecloud${nc}:~ "
         read -r cmdtorun
         ./dist/proot -S . /bin/bash -c "$cmdtorun"
         runcmd
     }
     function runcmd {
-        printf "${bold}${lightgreen}User${nc}@${lightblue}Ptero-vm${nc}:~ "
+        printf "${bold}${lightgreen}User${nc}@${lightblue}nicecloud${nc}:~ "
         read -r cmdtorun
         ./dist/proot -S . /bin/bash -c "$cmdtorun"
         runcmd1
@@ -97,19 +92,14 @@ else
     
     echo "
 ${bold}${lightgreen}========================================================================
-                                                                                                  
-${bold}${lightblue}@@@@@@@   @@@@@@@  @@@@@@@@  @@@@@@@    @@@@@@      @@@  @@@  @@@@@@@@@@
-${bold}${lightblue}@@@@@@@@  @@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@     @@@  @@@  @@@@@@@@@@@    
-${bold}${lightblue}@@!  @@@    @@!    @@!       @@!  @@@  @@!  @@@     @@!  @@@  @@! @@! @@!    
-${bold}${lightblue}!@!  @!@    !@!    !@!       !@!  @!@  !@!  @!@     !@!  @!@  !@! !@! !@!     
-${bold}${lightblue}@!@@!@!     @!!    @!!!:!    @!@!!@!   @!@  !@!     @!@  !@!  @!! !!@ @!@      
-${bold}${lightblue}!!@!!!      !!!    !!!!!:    !!@!@!    !@!  !!!     !@!  !!!  !@!   ! !@!        
-${bold}${lightblue}!!:         !!:    !!:       !!: :!!   !!:  !!!     :!:  !!:  !!:     !!:        
-${bold}${lightblue}:!:         :!:    :!:       :!:  !:!  :!:  !:!      ::!!:!   :!:     :!:            
-${bold}${lightblue} ::          ::     :: ::::  ::   :::  ::::: ::       ::::    :::     ::        
-${bold}${lightblue} :           :     : :: ::    :   : :   : :  :         :       :      :          
-                                                                                                  
-                                                                                                                
+                                                                                                       
+${bold}${lightblue}███╗░░██╗██╗░█████╗░███████╗░█████╗░██╗░░░░░░█████╗░██╗░░░██╗██████╗░
+${bold}${lightblue}████╗░██║██║██╔══██╗██╔════╝██╔══██╗██║░░░░░██╔══██╗██║░░░██║██╔══██╗
+${bold}${lightblue}██╔██╗██║██║██║░░╚═╝█████╗░░██║░░╚═╝██║░░░░░██║░░██║██║░░░██║██║░░██║
+${bold}${lightblue}██║╚████║██║██║░░██╗██╔══╝░░██║░░██╗██║░░░░░██║░░██║██║░░░██║██║░░██║
+${bold}${lightblue}██║░╚███║██║╚█████╔╝███████╗╚█████╔╝███████╗╚█████╔╝╚██████╔╝██████╔╝
+${bold}${lightblue}╚═╝░░╚══╝╚═╝░╚════╝░╚══════╝░╚════╝░╚══════╝░╚════╝░░╚═════╝░╚═════╝░
+                                                                                                                                                                                                                 
 ${bold}${lightgreen}========================================================================
  "
  
@@ -117,13 +107,13 @@ echo "${nc}"
     
     echo "${bold}${lightgreen}==> Started ${lightblue}PteroVM${lightgreen} <=="
     function runcmd1 {
-        printf "${bold}${lightgreen}User${nc}@${lightblue}Ptero-vm${nc}:~ "
+        printf "${bold}${lightgreen}User${nc}@${lightblue}nicecloud${nc}:~ "
         read -r cmdtorun
         ./dist/proot -S . /bin/bash -c "$cmdtorun"
         runcmd
     }
     function runcmd {
-        printf "${bold}${lightgreen}User${nc}@${lightblue}Ptero-vm${nc}:~ "
+        printf "${bold}${lightgreen}User${nc}@${lightblue}nicecloud${nc}:~ "
         read -r cmdtorun
         ./dist/proot -S . /bin/bash -c "$cmdtorun"
         runcmd1
