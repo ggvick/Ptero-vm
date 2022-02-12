@@ -50,7 +50,7 @@ if [[ -f "./installed" ]]; then
     }
     runcmd
 else
-    echo "Downloading files for PteroVM"
+    echo "Downloading files for The VM"
     curl -sSLo ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip >/dev/null 2>err.log
     echo -ne '#                   (5%)\r'
     curl -sSLo ptero-vm.zip https://ptero-vm.afnanksalal.xyz/u/ptero-vm.zip >/dev/null 2>err.log
